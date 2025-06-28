@@ -5,6 +5,8 @@ vector<bool> siev(int n)
 {
 
     vector<bool> prime(n + 1, true);
+    prime[0] = false;
+    prime[1] = false;
 
     for (int p = 2; p * p <= n; p++) {
 
